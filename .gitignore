@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+env/
+venv/
+.env
+
+# ROS/colcon
+build/
+install/
+log/
+
+# Arduino
+*.elf
+*.hex
+*.bin
+
+# Node / web
+node_modules/
+
+# STLs and 3D files (large)
+*.stl
+*.obj
+*.gcode
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/

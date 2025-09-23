@@ -1,0 +1,30 @@
+# Parámetros de configuración de PepoBot
+# Ajusta estos valores a tu hardware/software real.
+
+robot:
+  name: Pepo
+  frame_id: base_link
+
+perception:
+  camera_topic: /camera/image_raw
+  confidence_threshold: 0.6
+  enable_tracking: true
+
+touch_bridge:
+  serial_port: COM3          # En Linux podría ser /dev/ttyUSB0 o /dev/ttyACM0
+  baudrate: 115200
+  debounce_ms: 30
+
+emotion_engine:
+  baseline_mood: calm        # calm | happy | curious | sleepy
+  arousal_decay: 0.01
+  valence_decay: 0.01
+
+servos:
+  head:
+    yaw_pin: 12
+    pitch_pin: 13
+  speed: 0.5                 # 0..1
+  soft_limits:
+    yaw: [-45, 45]
+    pitch: [-15, 25]
