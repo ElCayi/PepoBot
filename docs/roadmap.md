@@ -1,3 +1,7 @@
+# Roadmap corto — PepoBot
+
+**Versión actual:** v0.0 — Preparación del proyecto
+
 Roadmap — PepoBot
 
 Borrador inicial del plan. Ajusta fechas y alcance según avance.
