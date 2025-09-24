@@ -1,31 +1,67 @@
-# Roadmap — PepoBot
+Roadmap — PepoBot
 
-> Borrador inicial del plan. Ajusta fechas y alcance según avance.
+Borrador inicial del plan. Ajusta fechas y alcance según avance.
 
-## Fase 1 — MVP (Semanas 1-2)
+Fase 0 — Base del proyecto (Semana 0)
 
-- [ ] Carcasa básica impresa (STL)
-- [ ] Cableado mínimo (tacto + 2 servos)
-- [ ] Firmware Arduino/ESP32 lee tacto y mueve servos
-- [ ] Nodo ROS2 `touch_bridge` publica eventos
+ Crear repo y estructura inicial de carpetas
 
-## Fase 2 — Percepción (Semanas 3-4)
+ Añadir .gitignore, README.md, roadmap.md y safety.md
 
-- [ ] Nodo ROS2 `perception` (detección simple)
-- [ ] Pruebas de latencia/estabilidad
+ Configurar tablero Kanban (Backlog / En progreso / Hecho)
 
-## Fase 3 — Emoción y Comportamientos (Semanas 5-6)
+Fase 1 — MVP locomoción + visión (Semanas 1–2)
 
-- [ ] `emotion_engine` con estados internos (valence/arousal)
-- [ ] `behaviors` que reaccionan a eventos y estado
+ Chasis básico con ruedas y cámara (RPi + driver motores)
 
-## Fase 4 — Integración y Seguridad (Semanas 7-8)
+ Nodo ROS2 perception inicial (streaming cámara simple)
 
-- [ ] Validaciones de seguridad eléctrica/mecánica
-- [ ] Documentación y videos de demo
+ Validar que Pepo se mueve y “ve”
 
-## Hitos
+Fase 2 — Expresividad corporal (Semanas 3–4)
 
-- MVP interactivo
-- Demo de percepción
-- Rutinas emocionales básicas
+ Cableado y control de 6–8 servos (orejas/cola/cuello)
+
+ Firmware Arduino + PCA9685
+
+ Nodo ROS2 gesture_bridge para poses básicas
+
+Fase 3 — Tacto y sonido (Semanas 5–6)
+
+ Sensores capacitivos en orejas, cabeza y lomo
+
+ Nodo ROS2 touch_bridge publica eventos pet(zone,intensity)
+
+ Micro + altavoz: sonidos básicos de Pepo
+
+Fase 4 — Emoción y comportamientos (Semanas 7–8)
+
+ emotion_engine con variables internas (curiosidad, energía, afecto, miedo)
+
+ behaviors que reaccionan a eventos + estados
+
+ Rutinas autónomas (explorar, aburrimiento, micro-aleatoriedad)
+
+Fase 5 — Carcasa y seguridad (Semanas 9–10)
+
+ Carcasa 3D (PLA) + zonas blandas (silicona fina)
+
+ Revisión de cableado y BMS en batería
+
+ Validaciones de seguridad eléctrica/mecánica
+
+ Documentación y video demo
+
+Hitos
+
+✅ Repo inicial con docs y estructura
+
+✅ Pepo se mueve y ve
+
+✅ Gestos reproducibles
+
+✅ Interacción táctil + sonidos
+
+✅ Rutinas emocionales básicas
+
+✅ Demo final con carcasa y seguridad

@@ -1,5 +1,7 @@
 # PepoBot
 
+**Versión actual:** v0.0 (Fase 0 — Preparación del proyecto)
+
 **PepoBot** es un proyecto de mascota-robot *hazlo tú mismo* (DIY). El robot, llamado **Pepo**, es un compañero adorable y programable cuyo objetivo es combinar movimiento, gestos expresivos, sensores táctiles y un motor emocional que le confiera apariencia de “vida propia”.  
 
 Este repo contiene la organización del proyecto, la hoja de ruta por fases, el BOM y el código inicial (firmware y software) para montar Pepo paso a paso.
